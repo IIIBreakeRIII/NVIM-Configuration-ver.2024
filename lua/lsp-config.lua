@@ -17,6 +17,10 @@ return require('packer').startup(function(use)
 	use { 'hrsh7th/cmp-buffer' }
 	use { 'hrsh7th/cmp-path' }
 	use { 'hrsh7th/cmp-cmdline' }
+	use { 'hrsh7th/cmp-vsnip' }
+	use { 'hrsh7th/vim-vsnip' }
+	use { 'hrsh7th/vim-vsnip-integ' }
+	use { 'rafamadriz/friendly-snippets' }
 
 	use { 'nvim-treesitter/nvim-treesitter' }
 
@@ -25,5 +29,6 @@ return require('packer').startup(function(use)
 	require('lsp.completion')
 	require('lsp.lspsaga-config')
 	require('lsp.treesitter-config')
+	require('lsp.vsnip-config')
 
 end)
