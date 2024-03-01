@@ -24,3 +24,8 @@ require("lspconfig")['pyright'].setup({
 	on_attach = on_attach,
 	capabilities = capabilites
 })
+
+require("lspconfig")['clangd'].setup({
+	on_attach = on_attach,
+	capabilities = capabilites
+})

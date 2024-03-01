@@ -3,8 +3,8 @@ return require('packer').startup(function(use)
 	-- Pakcer initial launch
 	use { 'wbthomason/packer.nvim' }
 
-	use { 'nvim-lualine/lualine.nvim' } require('plugin.lualine')
-	use { 'nvim-tree/nvim-web-devicons' } require('plugin.nvim-web-devicons')
+	use { 'nvim-lualine/lualine.nvim' }
+	use { 'nvim-tree/nvim-web-devicons' }
 
 	-- Bracket Pair
 	use { 'cohama/lexima.vim' }
@@ -35,6 +35,8 @@ return require('packer').startup(function(use)
 	-- Theme Install
 	use { 'JoosepAlviste/palenightfall.nvim' }
 
+	require('plugin.lualine')
+	require('plugin.nvim-web-devicons')
 	require('plugin.trouble-config')
 	require('plugin.telescope-config')
 	require('plugin.barbar-config')
