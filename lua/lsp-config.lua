@@ -29,5 +29,9 @@ return require('packer').startup(function(use)
 	require('lsp.completion')
 	require('lsp.lspsaga-config')
 	require('lsp.treesitter-config')
+	require('lsp.dart-lsp-config')
+
+	-- Swift LSP Config
+	require('lsp.swift-config')
 
 end)

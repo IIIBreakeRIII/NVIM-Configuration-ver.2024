@@ -35,6 +35,9 @@ return require('packer').startup(function(use)
 	-- Github Copilot
 	use { 'github/copilot.vim' }
 
+	-- Flutter Build
+	use { 'akinsho/flutter-tools.nvim' }
+
 	-- Theme Install
 	use { 'JoosepAlviste/palenightfall.nvim' }
 
@@ -48,5 +51,6 @@ return require('packer').startup(function(use)
 	require('plugin.neogit-config')
 	require('plugin.presence-config')
 	require('plugin.copilot-config')
+	require('plugin.flutter-config')
 
 end)
