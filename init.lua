@@ -19,3 +19,4 @@ vim.cmd[[colorscheme palenightfall]]
 require('plugged')
 require('lsp-config')
 require('key-bind')
+require('execute')

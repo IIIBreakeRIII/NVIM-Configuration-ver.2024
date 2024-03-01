@@ -32,9 +32,13 @@ return require('packer').startup(function(use)
 	-- Discord Connect
 	use { 'andweeb/presence.nvim' }
 
+	-- Github Copilot
+	use { 'github/copilot.vim' }
+
 	-- Theme Install
 	use { 'JoosepAlviste/palenightfall.nvim' }
 
+	-- Configuration File Setup
 	require('plugin.lualine')
 	require('plugin.nvim-web-devicons')
 	require('plugin.trouble-config')
@@ -43,5 +47,6 @@ return require('packer').startup(function(use)
 	require('plugin.gitsigns-config')
 	require('plugin.neogit-config')
 	require('plugin.presence-config')
+	require('plugin.copilot-config')
 
 end)
