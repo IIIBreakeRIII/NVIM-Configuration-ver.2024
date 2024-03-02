@@ -38,6 +38,9 @@ return require('packer').startup(function(use)
 	-- Flutter Build
 	use { 'akinsho/flutter-tools.nvim' }
 
+	-- XcodeBuilder
+	use { "wojciech-kulik/xcodebuild.nvim" }
+
 	-- Theme Install
 	use { 'JoosepAlviste/palenightfall.nvim' }
 
@@ -52,5 +55,6 @@ return require('packer').startup(function(use)
 	require('plugin.presence-config')
 	require('plugin.copilot-config')
 	require('plugin.flutter-config')
+	require('plugin.xcodebuild-config')
 
 end)

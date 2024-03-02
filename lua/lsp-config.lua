@@ -30,6 +30,8 @@ return require('packer').startup(function(use)
 	require('lsp.lspsaga-config')
 	require('lsp.treesitter-config')
 	require('lsp.dart-lsp-config')
+	require('lsp.dap-config')
+	require('lsp.dap-ui-config')
 
 	-- Swift LSP Config
 	require('lsp.swift-config')
