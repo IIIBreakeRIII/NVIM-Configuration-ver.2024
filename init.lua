@@ -15,6 +15,9 @@ vim.cmd('highlight Keyword cterm=italic ctermfg=Red gui=italic')
 vim.cmd('highlight Function cterm=italic ctermfg=LightRed gui=italic')
 
 vim.cmd[[colorscheme palenightfall]]
+require('palenightfall').setup({
+  transparent = true,
+})
 
 require('plugged')
 require('lsp-config')
