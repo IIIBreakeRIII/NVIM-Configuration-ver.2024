@@ -24,6 +24,27 @@ return require('packer').startup(function(use)
 
 	use { 'nvim-treesitter/nvim-treesitter' }
 
+	use { 'nvim-java/nvim-java',
+		requires = {
+			'nvim-java/lua-async-await',
+			'nvim-java/nvim-java-core',
+			'nvim-java/nvim-java-test',
+			'nvim-java/nvim-java-dap',
+			'MunifTanjin/nui.nvim',
+			'neovim/nvim-lspconfig',
+			'mfussenegger/nvim-dap',
+			{
+				'williamboman/mason.nvim',
+				opts = {
+					registries = {
+						'github:nvim-java/mason-registry',
+						'github:mason-org/mason-registry',
+					},
+				},
+			}
+		}
+	}
+
 	require('lsp.mason-config')
 	require('lsp.formatter-config')
 	require('lsp.completion')
@@ -35,5 +56,8 @@ return require('packer').startup(function(use)
 
 	-- Swift LSP Config
 	require('lsp.swift-config')
+
+	-- Java Config
+	require('lsp.java-config')
 
 end)
