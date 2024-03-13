@@ -34,6 +34,7 @@ return require('packer').startup(function(use)
 
 	-- Github Copilot
 	use { 'github/copilot.vim' }
+	use { 'CopilotC-Nvim/CopilotChat.nvim' }
 
 	-- Flutter Build
 	use { 'akinsho/flutter-tools.nvim' }
@@ -56,5 +57,6 @@ return require('packer').startup(function(use)
 	require('plugin.copilot-config')
 	require('plugin.flutter-config')
 	require('plugin.xcodebuild-config')
+	require('plugin.copilot-chat-config')
 
 end)
