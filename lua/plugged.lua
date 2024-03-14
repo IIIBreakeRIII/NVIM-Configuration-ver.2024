@@ -22,7 +22,7 @@ return require('packer').startup(function(use)
 	use { 'romgrk/barbar.nvim' }
 
 	-- Markdown Preview
-	use { 'iamcco/markdown-preview.nvim' }
+	use { 'iamcco/markdown-preview.nvim', run = function() vim.fn["mkdp#util#install"]() end, }
 
 	-- Git
 	use { 'lewis6991/gitsigns.nvim' }

@@ -47,3 +47,8 @@ require("lspconfig")['jdtls'].setup({
     }
   }
 })
+
+require("lspconfig")['marksman'].setup({
+	on_attach = on_attach,
+	capabilities = capabilites
+})
