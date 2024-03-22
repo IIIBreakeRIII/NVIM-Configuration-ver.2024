@@ -18,7 +18,11 @@ return require('packer').startup(function(use)
 	use { 'hrsh7th/cmp-path' }
 	use { 'hrsh7th/cmp-cmdline' }
 	use { 'hrsh7th/cmp-vsnip' }
-	use { 'hrsh7th/vim-vsnip' }
+	use { 'hrsh7th/vim-vsnip',
+		requires = {
+			'Neevash/awesome-flutter-snippets',
+		},
+	}
 	use { 'hrsh7th/vim-vsnip-integ' }
 	use { 'rafamadriz/friendly-snippets' }
 
@@ -30,7 +34,6 @@ return require('packer').startup(function(use)
 			'nvim-java/nvim-java-core',
 			'nvim-java/nvim-java-test',
 			'nvim-java/nvim-java-dap',
-			'MunifTanjin/nui.nvim',
 			'neovim/nvim-lspconfig',
 			'mfussenegger/nvim-dap',
 			{
@@ -53,6 +56,7 @@ return require('packer').startup(function(use)
 	require('lsp.dart-lsp-config')
 	require('lsp.dap-config')
 	require('lsp.dap-ui-config')
+	require('lsp.vsnip-config')
 
 	-- Swift LSP Config
 	require('lsp.swift-config')
