@@ -52,3 +52,8 @@ require("lspconfig")['marksman'].setup({
 	on_attach = on_attach,
 	capabilities = capabilites
 })
+
+-- require("lspconfig")['dartls'].setup({
+-- 	on_attach = on_attach,
+-- 	capabilities = capabilites
+-- })

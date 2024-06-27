@@ -18,6 +18,9 @@ return require('packer').startup(function(use)
 	use { 'nvim-lua/plenary.nvim' }
 	local async = require "plenary.async"
 
+	-- Indent Guide
+	use {"lukas-reineke/indent-blankline.nvim"}
+
 	-- Tagbar
 	use { 'romgrk/barbar.nvim' }
 
@@ -58,5 +61,6 @@ return require('packer').startup(function(use)
 	require('plugin.flutter-config')
 	require('plugin.xcodebuild-config')
 	require('plugin.copilot-chat-config')
+	require('plugin.indent-blankline-config')
 
 end)
