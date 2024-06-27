@@ -19,7 +19,8 @@ return require('packer').startup(function(use)
 	local async = require "plenary.async"
 
 	-- Indent Guide
-	use {"lukas-reineke/indent-blankline.nvim"}
+	use { "lukas-reineke/indent-blankline.nvim" }
+  use { "nmac427/guess-indent.nvim" }
 
 	-- Tagbar
 	use { 'romgrk/barbar.nvim' }
@@ -62,5 +63,6 @@ return require('packer').startup(function(use)
 	require('plugin.xcodebuild-config')
 	require('plugin.copilot-chat-config')
 	require('plugin.indent-blankline-config')
+  require('plugin.guess-indent-config')
 
 end)
